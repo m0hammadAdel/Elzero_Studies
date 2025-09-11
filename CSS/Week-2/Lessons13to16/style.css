@@ -1,0 +1,28 @@
+/* Assignment 1 */
+.parent .child .title {
+    color: red;
+}
+
+.parent .title {
+    color: blue;
+}
+
+.parent p,
+.title {
+    color: green;
+}
+
+/* Assignment 2 */
+.assign-2 div {
+    color: white;
+    background-color: red;
+    padding: 15px;
+    margin: 15px;
+    width: fit-content;
+    max-width: 400px;
+}
+
+.assign-2 .four {
+    height: 25px;
+    overflow-y: hidden;
+}
