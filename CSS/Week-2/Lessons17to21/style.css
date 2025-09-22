@@ -1,0 +1,50 @@
+/* Assignment 1 */
+.assign1 {
+    background-color: rgb(235, 234, 234);
+    padding: 15px;
+    text-shadow:
+        .5px .5px 0 red,
+        1px 1px 0 blue;   
+}
+
+/* Assignment 2 */
+.assign2 .one {
+    text-transform: uppercase;
+}
+
+.assign2 .two {
+    text-transform: capitalize;
+}
+
+/* Assignment 3 */
+.assign3 div {
+    background-color: rgb(235, 234, 234);
+    padding: 15px;
+    margin: 15px;
+    width: 400px;
+}
+
+.assign3 .two {
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+.assign3 .three {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Assignment 4 */
+a {
+    display: block;
+    width: fit-content;
+    padding: 15px;
+    margin: 20px auto;
+    border-bottom: 5px solid green;
+    background-color: rgb(106, 160, 138);
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
