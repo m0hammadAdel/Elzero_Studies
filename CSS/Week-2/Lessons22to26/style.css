@@ -1,0 +1,43 @@
+/* Assignment 1 */
+.assign1 {
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.assign1 p {
+    padding: inherit;
+    border: inherit;
+    background-color: lightgrey;
+}
+
+
+/* Assignment 2 */
+.assign2 .open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.assign2 .cairo {
+    font-family: 'Cairo', sans-serif;
+}
+
+.assign2 .jomhuria {
+    font-family: 'Jomhuria', cursive;
+}
+
+
+/* Assignment 3 */
+:root {
+    font-size: 20px;
+}
+
+.rem50 {
+    font-size: 2.5rem;
+}
+
+.rem40 {
+    font-size: 2rem;
+}
+
+.rem30 {
+    font-size: 1.5rem;
+}
