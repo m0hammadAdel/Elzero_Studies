@@ -1,0 +1,48 @@
+/* Assignment 1 */
+.assign1 {
+    background-color: lightgrey;
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.assign1 * {
+    float: left;
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+    margin: 15px 7.5px 0;
+}
+
+.assign1 .full {
+    width: calc((100% - 34px));
+}
+
+.assign1 .third {
+    width: calc((100% - 105px) / 3);
+}
+
+.assign1 .half {
+    width: calc((100% - 70px) / 2);
+}
+
+.assign1 .quad {
+    width: calc((100% - 140px) / 4);
+    margin-bottom: 15px;
+}
+
+/* Assignment 2 */
+.assign2 div {
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    background-color: rgb(211, 211, 211);
+}
+
+.assign2 .one {
+    background-color: rgb(211, 211, 211, 0.1);
+}
+
+.assign2 .two {
+    opacity: 0.1;
+}
