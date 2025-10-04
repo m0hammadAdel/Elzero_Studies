@@ -1,0 +1,39 @@
+div {
+    margin: 10px auto;
+    padding: 15px;
+    width: 400px;
+    background-color: #eee;
+    border: 2px solid red;
+    border-color: lightcoral cyan;
+    position: relative;
+}
+
+div span {
+    padding: 5px 7px;
+    background-color: cyan;
+    position: absolute;
+}
+
+.top-left {
+    top: -10px;
+    left: -10px;
+    border-right: 2px solid lightcoral;
+}
+
+.bottom-left {
+    bottom: -10px;
+    left: -10px;
+    border-right: 2px solid lightcoral;
+}
+
+.top-right {
+    top: -10px;
+    right: -10px;
+    border-left: 2px solid lightcoral;
+}
+
+.bottom-right {
+    bottom: -10px;
+    right: -10px;
+    border-left: 2px solid lightcoral;
+}
