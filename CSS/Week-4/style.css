@@ -1,0 +1,103 @@
+/* Assignment 1 */
+.assign1 div {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin: 20px auto;
+    background-color: lightgrey;
+}
+
+.assign1 div:empty {
+    background-color: red;
+}
+
+
+/* Assignment 2 */
+.assign2 {
+    width: 300px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: rgb(176, 176, 176);
+    position: relative;
+}
+
+.assign2::before {
+    content: "1";
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    left: -10px;
+    margin-top: -10px;
+}
+
+
+/* Assignment 3 */
+.assign3 p {
+    width: 400px;
+    padding: 10px;
+    margin-left: 110px;
+    background-color: lightgrey;
+    position: relative;
+}
+.assign3 p::before {
+    content: attr(data-person);
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 35px;
+    background-color: rgb(176, 176, 176);
+    isolation: isolate;
+    position: absolute;
+    left: -100px;
+    top: -10px;
+}
+
+.assign3 p::after {
+    content: "";
+    height: 39px;
+    width: 5px;
+    background-color: violet;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* Assignment 4 */
+.assign4 p {
+    width: 400px;
+    padding: 10px;
+    margin-left: 60px;
+    background-color: lightgrey;
+    position: relative;
+    counter-increment: p-count;
+}
+
+.assign4 p::before {
+    content: counter(p-count);
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    color: white;
+    background-color: violet;
+    position: absolute;
+    left: 0;
+    margin-left: -39px;
+    top: 0;
+}
+
+.assign4 p::after {
+    content: "";
+    height: 39px;
+    width: 5px;
+    background-color: violet;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
