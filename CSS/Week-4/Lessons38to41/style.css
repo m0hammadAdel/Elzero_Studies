@@ -1,0 +1,115 @@
+/* Assignment 1 */
+.assign1 {
+    width: 400px;
+    margin: auto;
+}
+.assign1 div {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: #eaeaea;
+    box-shadow: 
+        5px 5px 0 0 rgb(113, 159, 233),
+        -5px -5px 0 0 rgb(255, 0, 85);
+    display: inline-block;
+    position: relative;
+    counter-increment: circle-counter;
+}
+
+.assign1 div::after {
+    content: "Element";
+    position: absolute;
+    left: 23%;
+    top: 40%;
+}
+
+.assign1 div::before {
+    content: counter(circle-counter);
+    position: absolute;
+    left: 40%;
+    top: 0;
+    margin-top: -10px;
+    text-align: center;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+
+
+/* Assignment 2 */
+.assign2 {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color:#eaeaea;
+    border-top-left-radius: 10px 20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 10px 20px;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0 0 5px 5px grey inset;
+}
+
+
+/* Assignment 3 */
+.assign3 {
+    width: 550px;
+    margin: auto;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.barrier {
+    display: inline-block;
+    width: 1.5px;
+    margin: 0 5px;
+    background-color: rgb(86, 196, 233);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 51%;
+}
+
+.barrier::before {
+    content: "Or";
+    background-color:rgb(86, 196, 233);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.card {
+    display: inline-block;
+    width: 225px;
+    margin-left: 25px;
+    padding: 10px;
+    background-color: #eaeaea;
+    box-sizing: border-box;   
+}
+
+.label {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(86, 196, 233);
+}
+
+.price {
+  width: 90%;
+  aspect-ratio: 1 / 1;
+  margin: auto;
+  line-height: 190px;
+  border-radius: 50%;
+  background: lightgrey;
+}
