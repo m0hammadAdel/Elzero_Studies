@@ -1,0 +1,243 @@
+:root {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    --orange-color: rgb(230, 92, 0);
+    --blue-color: rgb(1, 178, 218);
+    --background-color: #eaeaea;
+}
+
+/* Assignment 1 */
+.assign1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    background-color: var(--background-color);
+    color: var(--orange-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.assign1::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+}
+
+.assign1::after {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    position: absolute;
+    z-index: -1;
+    right: 10px;
+}
+
+
+/* Assignment 2 */
+.assign2-parent {
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between; 
+    align-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.assign2-parent div {
+    flex-basis: 32%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange-color);
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Assignment 3 */
+.assign3-parent {
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.assign3-parent div {
+    flex-basis: 31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-color);
+    color: white;
+    font-weight: bold;
+}
+
+.assign3-parent .one {
+    order: 6;
+    align-self: flex-end;
+    height: 40px;
+}
+
+.assign3-parent .two {
+    order: 5;
+}
+
+.assign3-parent .three {
+    order: 2;
+    align-self: flex-start;
+    height: 40px;
+}
+
+.assign3-parent .four {
+    order: 3;
+}
+
+.assign3-parent .five {
+    order: 4;
+}
+
+.assign3-parent .six {
+    order: 1;
+}
+
+
+/* Assignment 4 */
+.assign4-parent {
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.assign4-parent div {
+    padding: 10px;
+    background-color: rgb(0, 128, 119);
+    color: white;
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assign4-parent .two {
+    align-self: flex-start;
+    min-width: 50%;
+}
+
+
+/* Assignment 5 */
+.assign5-parent {
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.assign5-parent div {
+    flex-basis: 16%;
+    min-height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: grey;
+}
+
+.assign5-parent .one {
+    order: 2;
+    background-color: var(--orange-color);
+}
+
+.assign5-parent .two {
+    order: 3;
+    align-self: flex-end;
+    background-color: rgb(5, 169, 5);
+}
+
+.assign5-parent .three {
+    order: 4;
+    background-color: rgb(140, 72, 33);
+}
+
+.assign5-parent .four {
+    order: 1;
+    align-self: flex-end;
+    background-color: purple
+}
+
+
+/* Assignment 6 */
+.page {
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.page div {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.page > div {
+    display: flex;
+    background-color: transparent;
+    padding: 0;
+}
+
+.page .header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    /* height: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 18px; */
+}
+
+.page ul {
+    padding: 10px;
+    background-color: lightgrey;
+    list-style-type: none;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
